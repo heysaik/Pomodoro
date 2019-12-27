@@ -4,7 +4,7 @@
 [![Platform](http://img.shields.io/badge/platform-iOS-red.svg?style=flat)](https://developer.apple.com/ios/)
 [![Github](http://img.shields.io/badge/github-aidev1065-green.svg?style=flat)](https://github.com/aidev1065)
 [![Download](https://img.shields.io/badge/Download-iOS-blue)]()
-[![Github All Releases](https://img.shields.io/github/downloads/aidev1065/pomodoro/total.svg)]
+![Github All Releases](https://img.shields.io/github/downloads/aidev1065/pomodoro/total.svg)
 
 ## The Best Pomodoro Timer
 Pomodoro² is a pomodoro timer with one purpose: to help you stay focused on your work. With no ads and no distracting graphics, this gorgeous timer is a great way for you to concentrate on your work.
