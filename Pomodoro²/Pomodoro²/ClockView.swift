@@ -131,7 +131,6 @@ struct ClockView: View {
                 .background(Color("background").edgesIgnoringSafeArea(.all))
             }
             .navigationBarTitle("")
-            .navigationBarHidden(true)
         }
         .onAppear {
             UIApplication.shared.isIdleTimerDisabled = true
