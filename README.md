@@ -3,7 +3,7 @@
 [![Swift 5](https://img.shields.io/badge/swift-5-orange.svg?style=flat)](https://github.com/apple/swift)
 [![Platform](http://img.shields.io/badge/platform-iOS-red.svg?style=flat)](https://developer.apple.com/ios/)
 [![Github](http://img.shields.io/badge/github-aidev1065-green.svg?style=flat)](https://github.com/aidev1065)
-[![Download](https://img.shields.io/badge/Download-iOS-blue)]()
+[![Download](https://img.shields.io/badge/Download-iOS-blue)](https://apps.apple.com/us/app/pomodoro/id1492557913?ls=1)
 ![Github All Releases](https://img.shields.io/github/downloads/aidev1065/pomodoro/total.svg)
 
 ## The Best Pomodoro Timer
