@@ -29,3 +29,5 @@ If you want to explore SwiftUI by working on a project, you're more than welcome
 - [ ] Localization in Spanish, French, Mandarin, French, German, Italian, Russian, Portuguese, and many more...
 - [ ] Users should choose length of Pomodoro (15-25 minutes) instead of just 25 minutes
 - [ ] watchOS app
+- [ ] Support Landscape Rotation
+- [ ] macOS and iPadOS app
