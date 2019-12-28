@@ -25,7 +25,8 @@ Pomodoro² was created as an internal tool, to help me manage my other developme
 If you want to explore SwiftUI by working on a project, you're more than welcome to try and tackle some of the features I'd love to see Pomodoro² have in the future.
 
 ### TODO
-- [ ] Play alert when timer runs out
+- [x] Play alert when timer runs out
+- [ ] Allow user to name task
 - [ ] Localization in Spanish, French, Mandarin, French, German, Italian, Russian, Portuguese, and many more...
 - [ ] Users should choose length of Pomodoro (15-25 minutes) instead of just 25 minutes
 - [ ] watchOS app

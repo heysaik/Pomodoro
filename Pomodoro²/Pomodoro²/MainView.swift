@@ -12,6 +12,7 @@ struct MainView: View {
     @State var timerView = false
     @State var showingStats = false
     @State var showingHelp = false
+    let selection = UISelectionFeedbackGenerator()
     
     var body: some View {
         NavigationView {
@@ -51,7 +52,11 @@ struct MainView: View {
                     .padding(.horizontal, 40)
                     .padding(.bottom)
                 VStack(spacing: 20) {
-                    NavigationLink(destination: ClockView(showView: self.$timerView), isActive: self.$timerView) {
+                    NavigationLink(destination: ClockView(showView: self.$timerView), isActive: self.$timerView) { EmptyView() }
+                    Button(action: {
+                        self.selection.selectionChanged()
+                        self.timerView = true
+                    }) {
                         ZStack {
                             Capsule()
                                 .foregroundColor(Color("accent"))
@@ -69,6 +74,7 @@ struct MainView: View {
                     }
                     
                     Button(action: {
+                        self.selection.selectionChanged()
                         self.showingStats.toggle()
                     }) {
                         ZStack {
@@ -91,6 +97,7 @@ struct MainView: View {
                     }
                     
                     Button(action: {
+                        self.selection.selectionChanged()
                         self.showingHelp.toggle()
                     }) {
                         ZStack {

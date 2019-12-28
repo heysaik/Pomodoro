@@ -19,6 +19,7 @@ struct HelpView: View {
     @State var result: Result<MFMailComposeResult, Error>? = nil
     @State var isShowingMailView = false
     @State var resetStats = false
+    let selection = UISelectionFeedbackGenerator()
     
     var body: some View {
         HStack {
@@ -39,6 +40,7 @@ struct HelpView: View {
                         
                         Button(action: {
                             // About Pomodoro
+                            self.selection.selectionChanged()
                             self.showPomodoro = true
                         }) {
                             ZStack {
@@ -49,10 +51,11 @@ struct HelpView: View {
                                         .foregroundColor(.white)
                                         .font(Font.system(.largeTitle, design: .rounded))
                                         .padding(.bottom)
-                                    Text("Pomodoro")
+                                    Text("About the Pomodoro Timer")
                                         .foregroundColor(.white)
-                                        .font(Font.system(.title, design: .rounded))
+                                        .font(Font.system(.headline, design: .rounded))
                                         .multilineTextAlignment(.center)
+                                        .padding(.horizontal)
                                 }
                             }
                             
@@ -63,6 +66,7 @@ struct HelpView: View {
                         
                         Button(action: {
                             // About the Developer
+                            self.selection.selectionChanged()
                             self.showDev = true
                         }) {
                             ZStack {
@@ -73,10 +77,11 @@ struct HelpView: View {
                                         .foregroundColor(.white)
                                         .font(Font.system(.largeTitle, design: .rounded))
                                         .padding(.bottom)
-                                    Text("Developer")
+                                    Text("About the Developer")
                                         .foregroundColor(.white)
-                                        .font(Font.system(.title, design: .rounded))
+                                        .font(Font.system(.headline, design: .rounded))
                                         .multilineTextAlignment(.center)
+                                        .padding(.horizontal)
                                 }
                             }
                         }
@@ -88,6 +93,7 @@ struct HelpView: View {
                     
                     HStack(alignment: .bottom, spacing: 20) {
                         Button(action: {
+                            self.selection.selectionChanged()
                             self.isShowingMailView.toggle()
                         }) {
                             ZStack {
@@ -97,11 +103,11 @@ struct HelpView: View {
                                         .foregroundColor(.white)
                                         .font(Font.system(.largeTitle, design: .rounded))
                                         .padding(.bottom)
-                                    Text("Email")
+                                    Text("Email Support")
                                         .foregroundColor(.white)
-                                        .font(Font.system(.title, design: .rounded))
+                                        .font(Font.system(.headline, design: .rounded))
                                         .multilineTextAlignment(.center)
-                                        .lineLimit(nil)
+                                        .padding(.horizontal)
                                 }
                             }
                         }
@@ -112,6 +118,7 @@ struct HelpView: View {
                         
                         Button(action: {
                             // Reset Stats
+                            self.selection.selectionChanged()
                             self.resetStats.toggle()
                         }) {
                             ZStack {
@@ -121,10 +128,11 @@ struct HelpView: View {
                                         .foregroundColor(.white)
                                         .font(Font.system(.largeTitle, design: .rounded))
                                         .padding(.bottom)
-                                    Text("Reset")
+                                    Text("Reset all Stats")
                                         .foregroundColor(.white)
-                                        .font(Font.system(.title, design: .rounded))
+                                        .font(Font.system(.headline, design: .rounded))
                                         .multilineTextAlignment(.center)
+                                        .padding(.horizontal)
                                 }
                             }
                         }
@@ -150,7 +158,7 @@ struct HelpView: View {
 
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
-        HelpView().previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+        HelpView()
     }
 }
 
