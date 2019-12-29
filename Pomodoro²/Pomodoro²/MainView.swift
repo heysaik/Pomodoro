@@ -31,7 +31,7 @@ struct MainView: View {
                             }
                         }) {
                             HStack {
-                                Text("Change App Icon 😉")
+                                Text("easterEggTitle")
                                 Image(systemName: "app")
                             }
                         }
@@ -44,7 +44,7 @@ struct MainView: View {
                     .fontWeight(.heavy)
                     .foregroundColor(Color("accent"))
                     .multilineTextAlignment(.center)
-                Text("A simple and effective way to help you stay focused")
+                Text("pomodoroSubtitle")
                     .font(.system(.headline, design: .rounded))
                     .fontWeight(.bold)
                     .foregroundColor(Color("blue"))
@@ -64,9 +64,9 @@ struct MainView: View {
                             HStack {
                                 Image(systemName: "hourglass.bottomhalf.fill")
                                     .accentColor(.white)
-                                Text("START")
+                                Text("Start")
                                     .foregroundColor(.white)
-                                    .font(.system(.headline, design: .rounded))
+                                    .font(Font.system(.headline, design: .rounded).lowercaseSmallCaps())
                                     .fontWeight(.bold)
                             }
                         }
@@ -84,9 +84,9 @@ struct MainView: View {
                             HStack {
                                 Image(systemName: "chart.bar.fill")
                                     .accentColor(.white)
-                                Text("STATS")
+                                Text("Stats")
                                     .foregroundColor(.white)
-                                    .font(.system(.headline, design: .rounded))
+                                    .font(Font.system(.headline, design: .rounded).lowercaseSmallCaps())
                                     .fontWeight(.bold)
                             }
                         }
@@ -107,9 +107,9 @@ struct MainView: View {
                             HStack {
                                 Image(systemName: "questionmark.circle.fill")
                                     .accentColor(.white)
-                                Text("HELP")
+                                Text("Help")
                                     .foregroundColor(.white)
-                                    .font(.system(.headline, design: .rounded))
+                                    .font(Font.system(.headline, design: .rounded).lowercaseSmallCaps())
                                     .fontWeight(.bold)
                             }
                         }
@@ -138,7 +138,7 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MainView()
-            MainView().environment(\.colorScheme, .dark).previewDevice(PreviewDevice.init(rawValue: "iPhone SE"))
+                .environment(\.locale, Locale(identifier: "en"))
         }
     }
 }

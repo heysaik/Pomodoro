@@ -28,7 +28,7 @@ struct ClockView: View {
             HStack {
                 Spacer()
                 VStack {
-                    Text(self.isWorking ? (self.breakTime().title) : "25 Minute Pomodoro")
+                    Text(self.isWorking ? (self.breakTime().title) : NSLocalizedString("25 Minute Pomodoro", comment: "25 Minute Pomodoro"))
                         .font(Font.system(size: 30, weight: .bold, design: .rounded))
                         .kerning(-0.11)
                         .foregroundColor(Color("accent"))
@@ -90,7 +90,7 @@ struct ClockView: View {
                                     }
                                 })
                             } else {
-                                if self.buttonText() == "END BREAK" {
+                                if self.buttonText() == NSLocalizedString("End Break", comment: "End Break") {
                                     self.secondsRemaining = 1
                                 } else {
                                     self.wantsToLeave.toggle()
@@ -101,7 +101,7 @@ struct ClockView: View {
                                 Capsule()
                                     .fill(Color("accent"))
                                 Text(self.buttonText())
-                                    .font(.system(.headline, design: .rounded))
+                                    .font(Font.system(.headline, design: .rounded).lowercaseSmallCaps())
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.white)
                             }
@@ -143,18 +143,18 @@ struct ClockView: View {
     func buttonText() -> String {
         // Differentiate between Work and Break
         if !isWorking {
-            return (self.buttonStart ? "START 25 MIN WORK SESSION" : "END WORK SESSION")
+            return (self.buttonStart ? NSLocalizedString("Start 25 min work session", comment: "Start 25 min work session") : NSLocalizedString("End Work Session", comment: "End Work Session"))
         } else {
-            return (self.buttonStart ? "START \(breakTime().title)" : "END BREAK")
+            return (self.buttonStart ? "\(NSLocalizedString("Start", comment: "Start")) \(breakTime().title)" : NSLocalizedString("End Break", comment: "End Break"))
         }
     }
     
-    func breakTime() -> (title: String, buttonTitle: String, seconds: Double) {
+    func breakTime() -> (title: String, seconds: Double) {
         // Differentiate between the 5 minute break or the 30 minute break
         if workSessions % 4 == 0 {
-            return (title: "30 Minute Break", buttonTitle: "30 MIN BREAK", seconds: 1800)
+            return (title: NSLocalizedString("30 Minute Break", comment: "30 Minute Break"), seconds: 1800)
         } else {
-            return (title: "5 Minute Break", buttonTitle: "5 MIN BREAK", seconds: 300)
+            return (title: NSLocalizedString("5 Minute Break", comment: "5 Minute Break"), seconds: 300)
         }
     }
 }
@@ -163,7 +163,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ClockView(showView: .constant(false))
+            .environment(\.locale, Locale(identifier: "es"))
             ClockView(showView: .constant(false)).environment(\.colorScheme, .dark).previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+                .environment(\.locale, Locale(identifier: "es"))
         }
     }
 }

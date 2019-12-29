@@ -128,7 +128,7 @@ struct HelpView: View {
                                         .foregroundColor(.white)
                                         .font(Font.system(.largeTitle, design: .rounded))
                                         .padding(.bottom)
-                                    Text("Reset all Stats")
+                                    Text("Reset All Stats")
                                         .foregroundColor(.white)
                                         .font(Font.system(.headline, design: .rounded))
                                         .multilineTextAlignment(.center)
@@ -137,7 +137,7 @@ struct HelpView: View {
                             }
                         }
                         .alert(isPresented: self.$resetStats) { () -> Alert in
-                            Alert(title: Text("Are you sure?"), message: Text("This will reset all the stats on Pomodoro² on \(UIDevice.current.name)"), primaryButton: .destructive(Text("Reset"), action: {
+                            Alert(title: Text("Are you sure?"), message: Text("\(NSLocalizedString("This will reset all the stats on Pomodoro² on", comment: "This will reset all the stats on Pomodoro² on")) \(UIDevice.current.name)"), primaryButton: .destructive(Text("Reset"), action: {
                                 UserDefaults.standard.synchronize()
                                 UserDefaults.standard.set(0, forKey: "com.p2.breaks")
                                 UserDefaults.standard.set(0, forKey: "com.p2.works")
@@ -159,6 +159,7 @@ struct HelpView: View {
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
         HelpView()
+            .environment(\.locale, Locale(identifier: "es"))
     }
 }
 

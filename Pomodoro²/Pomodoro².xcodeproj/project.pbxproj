@@ -24,6 +24,7 @@
 		8BB33CC523B0A82F009C272F /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB33CC423B0A82F009C272F /* Ticker.swift */; };
 		8BFE0E3D23B74E3E00A535ED /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8BFE0E3C23B74E3E00A535ED /* SF-Pro-Rounded-Heavy.otf */; };
 		8BFE0E4023B74FBF00A535ED /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFE0E3F23B74FBF00A535ED /* AudioToolbox.framework */; };
+		8BFEBC4423B8996A0081C323 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBC4623B8996A0081C323 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		8BB33CC423B0A82F009C272F /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		8BFE0E3C23B74E3E00A535ED /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
 		8BFE0E3F23B74FBF00A535ED /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8BFEBC4523B8996A0081C323 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8BFEBC4823B89EE30081C323 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 				8B6F568C23AE0D6300E7C8C9 /* SceneDelegate.swift */,
 				8B0680D323B1AE3C0080876E /* UI's */,
 				8B242EDD23B0AFD2004E0A90 /* MainView.swift */,
+				8BFEBC4623B8996A0081C323 /* Localizable.strings */,
 				8B6F568E23AE0D6300E7C8C9 /* ClockView.swift */,
 				8B9F38F323B1F38500E066E6 /* StatsView.swift */,
 				8B9F38F523B1FF2600E066E6 /* HelpView.swift */,
@@ -177,6 +181,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 8B6F567E23AE0D6300E7C8C9;
 			productRefGroup = 8B6F568823AE0D6300E7C8C9 /* Products */;
@@ -197,6 +202,7 @@
 				8B76E39623B5F81600F4BA16 /* LightIcon@2x.png in Resources */,
 				8B6F569423AE0D6400E7C8C9 /* Preview Assets.xcassets in Resources */,
 				8B76E39E23B5F86B00F4BA16 /* Primary@3x.png in Resources */,
+				8BFEBC4423B8996A0081C323 /* Localizable.strings in Resources */,
 				8B76E39D23B5F86B00F4BA16 /* Primary@2x.png in Resources */,
 				8B6F569123AE0D6400E7C8C9 /* Assets.xcassets in Resources */,
 				8BFE0E3D23B74E3E00A535ED /* SF-Pro-Rounded-Heavy.otf in Resources */,
@@ -233,6 +239,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		8BFEBC4623B8996A0081C323 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BFEBC4523B8996A0081C323 /* en */,
+				8BFEBC4823B89EE30081C323 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -240,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -300,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

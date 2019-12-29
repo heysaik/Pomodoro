@@ -37,9 +37,9 @@ struct StatsView: View {
                                         .foregroundColor(.white)
                                         .font(Font.system(.title, design: .rounded))
 
-                                    Text("WORK SESSIONS")
+                                    Text("Work Sessions")
                                         .foregroundColor(.white)
-                                        .font(Font.system(.headline, design: .rounded))
+                                        .font(Font.system(.headline, design: .rounded).lowercaseSmallCaps())
                                     .padding(.bottom)
 
                                     Text("\(UserDefaults.standard.integer(forKey: "com.p2.works"))")
@@ -70,9 +70,11 @@ struct StatsView: View {
                                     Image(systemName: "gamecontroller.fill")
                                         .foregroundColor(.white)
                                         .font(Font.system(.title, design: .rounded))
-                                    Text("BREAKS\n")
+                                    Text("Breaks")
                                         .foregroundColor(.white)
-                                        .font(Font.system(.headline, design: .rounded))
+                                        .font(Font.system(.headline, design: .rounded).lowercaseSmallCaps())
+                                    .padding(.bottom)
+
                                     Text("\(UserDefaults.standard.integer(forKey: "com.p2.breaks"))")
                                         .foregroundColor(.white)
                                         .font(Font.system(.largeTitle, design: .rounded))
@@ -106,6 +108,6 @@ struct StatsView: View {
 
 struct StatsView_Previews: PreviewProvider {
     static var previews: some View {
-        StatsView().environment(\.colorScheme, .dark)
+        StatsView().environment(\.colorScheme, .dark).environment(\.locale, Locale(identifier: "es"))
     }
 }

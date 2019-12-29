@@ -1,0 +1,30 @@
+/* 
+  Localization.strings
+  Pomodoro²
+
+  Created by Sai Kambampati on 12/29/19.
+  Copyright © 2019 SK2020. All rights reserved.
+*/
+
+"pomodoroSubtitle" = "A simple and effective way to help you stay focused";
+"easterEggTitle" = "Change App Icon 😉";
+"Start" = "Start";
+"Stats" = "Stats";
+"Help" = "Help";
+"Work Sessions" = "Work Sessions";
+"Breaks" = "Breaks";
+"About the Pomodoro Timer" = "About the Pomodoro Timer";
+"About the Developer" = "About the Developer";
+"Email Support" = "Email Support";
+"Reset All Stats" = "Reset All Stats";
+"25 Minute Pomodoro" = "25 Minute Pomodoro";
+"30 Minute Break" = "30 Minute Break";
+"5 Minute Break" = "5 Minute Break";
+"Start 25 min work session" = "Start 25 min work session";
+"End Work Session" = "End Work Session";
+"End Break" = "End Break";
+"Are you sure?" = "Are you sure?";
+"This action will end all progress you have made" = "This action will end all progress you have made";
+"End Session" = "End Session";
+"Reset" = "Reset";
+"This will reset all the stats on Pomodoro² on" = "This will reset all the stats on Pomodoro² on";
