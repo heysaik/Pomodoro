@@ -26,9 +26,22 @@ If you want to explore SwiftUI by working on a project, you're more than welcome
 
 ### TODO
 - [x] Play alert when timer runs out
+- [x] Localization (languages below)
 - [ ] Allow user to name task
-- [ ] Localization in Spanish, French, Mandarin, French, German, Italian, Russian, Portuguese, and many more...
 - [ ] Users should choose length of Pomodoro (15-25 minutes) instead of just 25 minutes
 - [ ] watchOS app
 - [ ] Support Landscape Rotation
 - [ ] macOS and iPadOS app
+
+#### Languages Supported
+- English 🇺🇸
+- Spanish 🇲🇽 🇪🇸
+- Chinese, Simplified 🇨🇳
+- French 🇫🇷
+- German 🇩🇪
+- Russian 🇷🇺
+- Portuguese 🇧🇷
+- Italian 🇮🇹
+- Hindi 🇮🇳
+- Telugu 🇮🇳
+- Tamil 🇮🇳

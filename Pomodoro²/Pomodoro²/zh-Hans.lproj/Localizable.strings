@@ -6,25 +6,25 @@
   Copyright © 2019 SK2020. All rights reserved.
 */
 
-"pomodoroSubtitle" = "A simple and effective way to help you stay focused";
-"easterEggTitle" = "Change App Icon 😉";
-"Start" = "Start";
-"Stats" = "Stats";
-"Help" = "Help";
-"Work Sessions" = "Work Sessions";
-"Breaks" = "Breaks";
-"About the Pomodoro Timer" = "About the Pomodoro Timer";
-"About the Developer" = "About the Developer";
-"Email Support" = "Email Support";
+"pomodoroSubtitle" = "一种简单有效的方法来帮助您保持专注";
+"easterEggTitle" = "更改应用程序图标😉";
+"Start" = "开始";
+"Stats" = "统计资料";
+"Help" = "救命";
+"Work Sessions" = "工作会议";
+"Breaks" = "休息时间";
+"About the Pomodoro Timer" = "关于番茄计时器";
+"About the Developer" = "关于开发商";
+"Email Support" = "电邮支援";
 "Reset All Stats" = "Reset All Stats";
-"25 Minute Pomodoro" = "25 Minute Pomodoro";
-"30 Minute Break" = "30 Minute Break";
-"5 Minute Break" = "5 Minute Break";
-"Start 25 min work session" = "Start 25 min work session";
-"End Work Session" = "End Work Session";
-"End Break" = "End Break";
-"Are you sure?" = "Are you sure?";
-"This action will end all progress you have made" = "This action will end all progress you have made";
-"End Session" = "End Session";
-"Reset" = "Reset";
-"This will reset all the stats on Pomodoro² on" = "This will reset all the stats on Pomodoro² on";
+"25 Minute Pomodoro" = "重置所有统计";
+"30 Minute Break" = "30分钟休息";
+"5 Minute Break" = "5分钟休息";
+"Start 25 min work session" = "开始25分钟的工作会议";
+"End Work Session" = "结束工作会议";
+"End Break" = "结束休息";
+"Are you sure?" = "你确定吗？";
+"This action will end all progress you have made" = "此操作将结束您已取得的所有进展";
+"End Session" = "结束会议";
+"Reset" = "重启";
+"This will reset all the stats on Pomodoro² on" = "这将重置Pomodoro²上的所有统计信息";

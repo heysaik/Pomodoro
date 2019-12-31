@@ -43,6 +43,15 @@
 		8B76E39423B5F81600F4BA16 /* LightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightIcon@2x.png"; sourceTree = "<group>"; };
 		8B76E39B23B5F86B00F4BA16 /* Primary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Primary@2x.png"; sourceTree = "<group>"; };
 		8B76E39C23B5F86B00F4BA16 /* Primary@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Primary@3x.png"; sourceTree = "<group>"; };
+		8B7B04DF23B8A4D000BEAFEA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8B7B04E023B8A4D800BEAFEA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B7B04E123B8A4DD00BEAFEA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B7B04E223B8A4E200BEAFEA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B7B04E323B8A4EF00BEAFEA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8B7B04E423B8A4F500BEAFEA /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B7B04E523B8A4FB00BEAFEA /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B7B04E623B8AAA000BEAFEA /* te */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = te; path = te.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B7B04E723B8AAAF00BEAFEA /* ta */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ta; path = ta.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8B9F38F323B1F38500E066E6 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		8B9F38F523B1FF2600E066E6 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		8BB33CC423B0A82F009C272F /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
@@ -182,6 +191,15 @@
 				en,
 				Base,
 				es,
+				"zh-Hans",
+				fr,
+				de,
+				ru,
+				"pt-BR",
+				it,
+				hi,
+				te,
+				ta,
 			);
 			mainGroup = 8B6F567E23AE0D6300E7C8C9;
 			productRefGroup = 8B6F568823AE0D6300E7C8C9 /* Products */;
@@ -244,6 +262,15 @@
 			children = (
 				8BFEBC4523B8996A0081C323 /* en */,
 				8BFEBC4823B89EE30081C323 /* es */,
+				8B7B04DF23B8A4D000BEAFEA /* zh-Hans */,
+				8B7B04E023B8A4D800BEAFEA /* fr */,
+				8B7B04E123B8A4DD00BEAFEA /* de */,
+				8B7B04E223B8A4E200BEAFEA /* ru */,
+				8B7B04E323B8A4EF00BEAFEA /* pt-BR */,
+				8B7B04E423B8A4F500BEAFEA /* it */,
+				8B7B04E523B8A4FB00BEAFEA /* hi */,
+				8B7B04E623B8AAA000BEAFEA /* te */,
+				8B7B04E723B8AAAF00BEAFEA /* ta */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -382,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SApps.Pomodoro-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -406,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SApps.Pomodoro-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;

@@ -6,25 +6,25 @@
   Copyright © 2019 SK2020. All rights reserved.
 */
 
-"pomodoroSubtitle" = "A simple and effective way to help you stay focused";
-"easterEggTitle" = "Change App Icon 😉";
-"Start" = "Start";
-"Stats" = "Stats";
-"Help" = "Help";
-"Work Sessions" = "Work Sessions";
-"Breaks" = "Breaks";
-"About the Pomodoro Timer" = "About the Pomodoro Timer";
-"About the Developer" = "About the Developer";
-"Email Support" = "Email Support";
+"pomodoroSubtitle" = "Uma maneira simples e eficaz de ajudá-lo a manter o foco";
+"easterEggTitle" = "Alterar ícone do aplicativo 😉";
+"Start" = "Começar";
+"Stats" = "Estatísticas";
+"Help" = "Socorro";
+"Work Sessions" = "Sessões de trabalho";
+"Breaks" = "Rompe";
+"About the Pomodoro Timer" = "Sobre o temporizador Pomodoro";
+"About the Developer" = "Sobre o desenvolvedor";
+"Email Support" = "Suporte por e-mail";
 "Reset All Stats" = "Reset All Stats";
-"25 Minute Pomodoro" = "25 Minute Pomodoro";
-"30 Minute Break" = "30 Minute Break";
-"5 Minute Break" = "5 Minute Break";
-"Start 25 min work session" = "Start 25 min work session";
-"End Work Session" = "End Work Session";
-"End Break" = "End Break";
-"Are you sure?" = "Are you sure?";
-"This action will end all progress you have made" = "This action will end all progress you have made";
-"End Session" = "End Session";
-"Reset" = "Reset";
-"This will reset all the stats on Pomodoro² on" = "This will reset all the stats on Pomodoro² on";
+"25 Minute Pomodoro" = "Pomodoro de 25 minutos";
+"30 Minute Break" = "Intervalo de 30 minutos";
+"5 Minute Break" = "Ruptura de 5 minutos";
+"Start 25 min work session" = "Iniciar 25 min de sessão de trabalho";
+"End Work Session" = "Terminar Sessão de Trabalho";
+"End Break" = "Fim do intervalo";
+"Are you sure?" = "Você tem certeza?";
+"This action will end all progress you have made" = "Esta ação encerrará todo o progresso que você fez";
+"End Session" = "Encerrar Sessão";
+"Reset" = "Redefinir";
+"This will reset all the stats on Pomodoro² on" = "Isso redefinirá todas as estatísticas do Pomodoro² em";

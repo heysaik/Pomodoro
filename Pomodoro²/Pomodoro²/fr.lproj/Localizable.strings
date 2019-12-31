@@ -6,25 +6,25 @@
   Copyright © 2019 SK2020. All rights reserved.
 */
 
-"pomodoroSubtitle" = "A simple and effective way to help you stay focused";
-"easterEggTitle" = "Change App Icon 😉";
-"Start" = "Start";
-"Stats" = "Stats";
-"Help" = "Help";
-"Work Sessions" = "Work Sessions";
-"Breaks" = "Breaks";
-"About the Pomodoro Timer" = "About the Pomodoro Timer";
-"About the Developer" = "About the Developer";
-"Email Support" = "Email Support";
-"Reset All Stats" = "Reset All Stats";
-"25 Minute Pomodoro" = "25 Minute Pomodoro";
-"30 Minute Break" = "30 Minute Break";
-"5 Minute Break" = "5 Minute Break";
-"Start 25 min work session" = "Start 25 min work session";
-"End Work Session" = "End Work Session";
-"End Break" = "End Break";
-"Are you sure?" = "Are you sure?";
-"This action will end all progress you have made" = "This action will end all progress you have made";
-"End Session" = "End Session";
-"Reset" = "Reset";
-"This will reset all the stats on Pomodoro² on" = "This will reset all the stats on Pomodoro² on";
+"pomodoroSubtitle" = "Un moyen simple et efficace pour vous aider à rester concentré";
+"easterEggTitle" = "Changer l'icône de l'application 😉";
+"Start" = "Début";
+"Stats" = "Statistiques";
+"Help" = "Aidez-moi";
+"Work Sessions" = "Séances de travail";
+"Breaks" = "Pauses";
+"About the Pomodoro Timer" = "À propos de la minuterie Pomodoro";
+"About the Developer" = "À propos du développeur";
+"Email Support" = "Assistance par e-mail";
+"Reset All Stats" = "Réinitialiser toutes les statistiques";
+"25 Minute Pomodoro" = "Pomodoro en 25 minutes";
+"30 Minute Break" = "Pause de 30 minutes";
+"5 Minute Break" = "Pause de 5 minutes";
+"Start 25 min work session" = "Commencez une session de travail de 25 minutes";
+"End Work Session" = "Fin de la session de travail";
+"End Break" = "Fin de pause";
+"Are you sure?" = "Êtes-vous sûr?";
+"This action will end all progress you have made" = "Cette action mettra fin à tous les progrès que vous avez réalisés";
+"End Session" = "Fin de session";
+"Reset" = "Réinitialiser";
+"This will reset all the stats on Pomodoro² on" = "Cela réinitialisera toutes les statistiques de Pomodoro² sur";

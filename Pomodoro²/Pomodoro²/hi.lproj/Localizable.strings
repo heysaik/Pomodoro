@@ -6,25 +6,25 @@
   Copyright © 2019 SK2020. All rights reserved.
 */
 
-"pomodoroSubtitle" = "A simple and effective way to help you stay focused";
-"easterEggTitle" = "Change App Icon 😉";
-"Start" = "Start";
-"Stats" = "Stats";
-"Help" = "Help";
-"Work Sessions" = "Work Sessions";
-"Breaks" = "Breaks";
-"About the Pomodoro Timer" = "About the Pomodoro Timer";
-"About the Developer" = "About the Developer";
-"Email Support" = "Email Support";
-"Reset All Stats" = "Reset All Stats";
-"25 Minute Pomodoro" = "25 Minute Pomodoro";
-"30 Minute Break" = "30 Minute Break";
-"5 Minute Break" = "5 Minute Break";
-"Start 25 min work session" = "Start 25 min work session";
-"End Work Session" = "End Work Session";
-"End Break" = "End Break";
-"Are you sure?" = "Are you sure?";
-"This action will end all progress you have made" = "This action will end all progress you have made";
-"End Session" = "End Session";
-"Reset" = "Reset";
-"This will reset all the stats on Pomodoro² on" = "This will reset all the stats on Pomodoro² on";
+"pomodoroSubtitle" = "ध्यान केंद्रित रहने में आपकी मदद करने का एक सरल और प्रभावी तरीका";
+"easterEggTitle" = "ऐप आइकन बदलें 😉";
+"Start" = "शुरू";
+"Stats" = "आँकड़े";
+"Help" = "मदद";
+"Work Sessions" = "काम के सत्र";
+"Breaks" = "ब्रेक";
+"About the Pomodoro Timer" = "पोमोडोरो टाइमर के बारे में";
+"About the Developer" = "डेवलपर के बारे में";
+"Email Support" = "ई - मेल समर्थन";
+"Reset All Stats" = "सभी आँकड़े रीसेट करें";
+"25 Minute Pomodoro" = "25 मिनट पोमोडोरो";
+"30 Minute Break" = "30 मिनट का ब्रेक";
+"5 Minute Break" = "5 मिनट का ब्रेक";
+"Start 25 min work session" = "25 मिनट का काम सत्र शुरू करें";
+"End Work Session" = "अंत काम सत्र";
+"End Break" = "अंत तोड़";
+"Are you sure?" = "क्या आपको यकीन है?";
+"This action will end all progress you have made" = "यह क्रिया आपके द्वारा की गई सभी प्रगति को समाप्त कर देगी";
+"End Session" = "अंत सत्र";
+"Reset" = "रीसेट";
+"This will reset all the stats on Pomodoro² on" = "यह पोमोडोरो पर सभी आँकड़ों को रीसेट कर देगा";

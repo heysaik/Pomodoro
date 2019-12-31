@@ -6,25 +6,25 @@
   Copyright © 2019 SK2020. All rights reserved.
 */
 
-"pomodoroSubtitle" = "A simple and effective way to help you stay focused";
-"easterEggTitle" = "Change App Icon 😉";
+"pomodoroSubtitle" = "Ein einfacher und effektiver Weg, um konzentriert zu bleiben";
+"easterEggTitle" = "App-Symbol ändern 😉";
 "Start" = "Start";
-"Stats" = "Stats";
-"Help" = "Help";
-"Work Sessions" = "Work Sessions";
-"Breaks" = "Breaks";
-"About the Pomodoro Timer" = "About the Pomodoro Timer";
-"About the Developer" = "About the Developer";
-"Email Support" = "Email Support";
-"Reset All Stats" = "Reset All Stats";
-"25 Minute Pomodoro" = "25 Minute Pomodoro";
-"30 Minute Break" = "30 Minute Break";
-"5 Minute Break" = "5 Minute Break";
-"Start 25 min work session" = "Start 25 min work session";
-"End Work Session" = "End Work Session";
-"End Break" = "End Break";
-"Are you sure?" = "Are you sure?";
-"This action will end all progress you have made" = "This action will end all progress you have made";
-"End Session" = "End Session";
-"Reset" = "Reset";
-"This will reset all the stats on Pomodoro² on" = "This will reset all the stats on Pomodoro² on";
+"Stats" = "Statistiken";
+"Help" = "Hilfe";
+"Work Sessions" = "Arbeitssitzungen";
+"Breaks" = "Geht kaputt";
+"About the Pomodoro Timer" = "Über den Pomodoro Timer";
+"About the Developer" = "Über den Entwickler";
+"Email Support" = "Email Unterstützung";
+"Reset All Stats" = "Alle Statistiken zurücksetzen";
+"25 Minute Pomodoro" = "25 Minuten Pomodoro";
+"30 Minute Break" = "30 Minuten Pause";
+"5 Minute Break" = "5 Minuten Pause";
+"Start 25 min work session" = "Starten Sie eine 25-minütige Arbeitssitzung";
+"End Work Session" = "Arbeitssitzung beenden";
+"End Break" = "Pause beenden";
+"Are you sure?" = "Bist du sicher?";
+"This action will end all progress you have made" = "Diese Aktion beendet alle von Ihnen erzielten Fortschritte";
+"End Session" = "Sitzung beenden";
+"Reset" = "Zurücksetzen";
+"This will reset all the stats on Pomodoro² on" = "Dadurch werden alle Statistiken für Pomodoro² zurückgesetzt auf";

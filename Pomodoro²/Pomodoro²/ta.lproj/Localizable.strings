@@ -6,25 +6,25 @@
   Copyright © 2019 SK2020. All rights reserved.
 */
 
-"pomodoroSubtitle" = "A simple and effective way to help you stay focused";
-"easterEggTitle" = "Change App Icon 😉";
-"Start" = "Start";
-"Stats" = "Stats";
-"Help" = "Help";
-"Work Sessions" = "Work Sessions";
-"Breaks" = "Breaks";
-"About the Pomodoro Timer" = "About the Pomodoro Timer";
-"About the Developer" = "About the Developer";
-"Email Support" = "Email Support";
-"Reset All Stats" = "Reset All Stats";
-"25 Minute Pomodoro" = "25 Minute Pomodoro";
-"30 Minute Break" = "30 Minute Break";
-"5 Minute Break" = "5 Minute Break";
-"Start 25 min work session" = "Start 25 min work session";
-"End Work Session" = "End Work Session";
-"End Break" = "End Break";
-"Are you sure?" = "Are you sure?";
-"This action will end all progress you have made" = "This action will end all progress you have made";
-"End Session" = "End Session";
-"Reset" = "Reset";
-"This will reset all the stats on Pomodoro² on" = "This will reset all the stats on Pomodoro² on";
+"pomodoroSubtitle" = "கவனம் செலுத்த உதவும் எளிய மற்றும் பயனுள்ள வழி";
+"easterEggTitle" = "பயன்பாட்டு ஐகானை மாற்றவும்";
+"Start" = "தொடக்கம்";
+"Stats" = "புள்ளிவிவரங்கள்";
+"Help" = "உதவி";
+"Work Sessions" = "பணி அமர்வுகள்";
+"Breaks" = "பிரேக்ஸ்";
+"About the Pomodoro Timer" = "போமோடோரோ டைமர் பற்றி";
+"About the Developer" = "டெவலப்பர் பற்றி";
+"Email Support" = "மின்னஞ்சல் ஆதரவு";
+"Reset All Stats" = "எல்லா புள்ளிவிவரங்களையும் மீட்டமைக்கவும்";
+"25 Minute Pomodoro" = "25 நிமிடம் பொமோடோரோ";
+"30 Minute Break" = "30 நிமிட இடைவெளி";
+"5 Minute Break" = "5 நிமிட இடைவெளி";
+"Start 25 min work session" = "25 நிமிட பணி அமர்வைத் தொடங்கவும்";
+"End Work Session" = "பணி அமர்வை முடிக்கவும்";
+"End Break" = "முடிவு இடைவெளி";
+"Are you sure?" = "நீ சொல்வது உறுதியா?";
+"This action will end all progress you have made" = "இந்த நடவடிக்கை நீங்கள் செய்த அனைத்து முன்னேற்றங்களையும் முடிவுக்குக் கொண்டுவரும்";
+"End Session" = "அமர்வு முடிவு";
+"Reset" = "மீட்டமை";
+"This will reset all the stats on Pomodoro² on" = "இது போமோடோரோஸில் உள்ள அனைத்து புள்ளிவிவரங்களையும் மீட்டமைக்கும்";
