@@ -122,6 +122,6 @@ struct StatsView: View {
 
 struct StatsView_Previews: PreviewProvider {
     static var previews: some View {
-        StatsView().environment(\.colorScheme, .dark).environment(\.locale, Locale(identifier: "es"))
+        StatsView()
     }
 }

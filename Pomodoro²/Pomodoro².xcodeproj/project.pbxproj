@@ -31,7 +31,6 @@
 /* Begin PBXFileReference section */
 		8B0680D023B1ACD40080876E /* Pomodoro².entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pomodoro².entitlements"; sourceTree = "<group>"; };
 		8B0680D123B1AE330080876E /* Ticks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticks.swift; sourceTree = "<group>"; };
-		8B1E847123BDAD01006DC431 /* AppKitGlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKitGlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B242EDD23B0AFD2004E0A90 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8B6F568723AE0D6300E7C8C9 /* Pomodoro².app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro².app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6F568A23AE0D6300E7C8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,13 +64,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8B1E846E23BDAD01006DC431 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B6F568423AE0D6300E7C8C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				8B6F568723AE0D6300E7C8C9 /* Pomodoro².app */,
-				8B1E847123BDAD01006DC431 /* AppKitGlue.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,23 +154,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B1E847023BDAD01006DC431 /* AppKitGlue */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8B1E847623BDAD01006DC431 /* Build configuration list for PBXNativeTarget "AppKitGlue" */;
-			buildPhases = (
-				8B1E846D23BDAD01006DC431 /* Sources */,
-				8B1E846E23BDAD01006DC431 /* Frameworks */,
-				8B1E846F23BDAD01006DC431 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AppKitGlue;
-			productName = AppKitGlue;
-			productReference = 8B1E847123BDAD01006DC431 /* AppKitGlue.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		8B6F568623AE0D6300E7C8C9 /* Pomodoro² */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B6F569B23AE0D6400E7C8C9 /* Build configuration list for PBXNativeTarget "Pomodoro²" */;
@@ -207,9 +181,6 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = SK2020;
 				TargetAttributes = {
-					8B1E847023BDAD01006DC431 = {
-						CreatedOnToolsVersion = 11.3;
-					};
 					8B6F568623AE0D6300E7C8C9 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -239,19 +210,11 @@
 			projectRoot = "";
 			targets = (
 				8B6F568623AE0D6300E7C8C9 /* Pomodoro² */,
-				8B1E847023BDAD01006DC431 /* AppKitGlue */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8B1E846F23BDAD01006DC431 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B6F568523AE0D6300E7C8C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,13 +234,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8B1E846D23BDAD01006DC431 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B6F568323AE0D6300E7C8C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,44 +282,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8B1E847423BDAD01006DC431 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = XJYMG76226;
-				INFOPLIST_FILE = AppKitGlue/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SApps.Mac.AppKitGlue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		8B1E847523BDAD01006DC431 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DEVELOPMENT_TEAM = XJYMG76226;
-				INFOPLIST_FILE = AppKitGlue/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SApps.Mac.AppKitGlue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		8B6F569923AE0D6400E7C8C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,15 +451,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B1E847623BDAD01006DC431 /* Build configuration list for PBXNativeTarget "AppKitGlue" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B1E847423BDAD01006DC431 /* Debug */,
-				8B1E847523BDAD01006DC431 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8B6F568223AE0D6300E7C8C9 /* Build configuration list for PBXProject "Pomodoro²" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
