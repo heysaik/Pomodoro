@@ -19,12 +19,25 @@ struct HelpView: View {
     @State var result: Result<MFMailComposeResult, Error>? = nil
     @State var isShowingMailView = false
     @State var resetStats = false
+    @Environment(\.presentationMode) var presentationMode
     let selection = UISelectionFeedbackGenerator()
     
     var body: some View {
         HStack {
             Spacer()
             VStack {
+                HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(Color("blue"))
+                            .font(Font.system(.title, design: .rounded))
+                    }
+                    .padding([.top, .leading])
+                    Spacer()
+                }
+                .padding(.top)
                 Image(systemName: "questionmark.circle.fill")
                     .font(Font.system(.largeTitle, design: .rounded))
                     .padding(.top)

@@ -27,11 +27,12 @@ If you want to explore SwiftUI by working on a project, you're more than welcome
 ### TODO
 - [x] Play alert when timer runs out
 - [x] Localization (languages below)
+- [x] iPadOS Support
+- [x] Support Landscape Rotation
+- [x] macOS App (via UIKit for Mac)
 - [ ] Allow user to name task
 - [ ] Users should choose length of Pomodoro (15-25 minutes) instead of just 25 minutes
 - [ ] watchOS app
-- [ ] Support Landscape Rotation
-- [ ] macOS and iPadOS app
 
 #### Languages Supported
 - English 🇺🇸

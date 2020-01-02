@@ -39,25 +39,23 @@ struct ClockView: View {
                     ZStack {
                         Circle()
                             .fill(Color("clock-outer"))
-                            .frame(width: geometry.size.width / 1.1, height: geometry.size.width / 1.1)
+                            .frame(width: geometry.size.width / DeviceConstraints().outerCircle(), height: geometry.size.width / DeviceConstraints().outerCircle())
                             .shadow(color: Color.primary.opacity(0.2), radius: 30, x: 0, y: 0)
                             .padding(.horizontal)
                         Ticks()
-                            .frame(width: geometry.size.width / 1.2, height: geometry.size.width / 1.2)
+                            .frame(width: geometry.size.width / DeviceConstraints().ticks(), height: geometry.size.width / DeviceConstraints().ticks())
                         
                         ZStack(alignment: .top) {
                             Circle()
                                 .fill(Color("clock-inner"))
-                                .frame(width: geometry.size.width / 1.5, height: geometry.size.width / 1.5)
+                                .frame(width: geometry.size.width / DeviceConstraints().innerCircle(), height: geometry.size.width / DeviceConstraints().innerCircle())
                                 .shadow(color: Color.black.opacity(0.35), radius: 10, x: 4, y: 0)
                                 .padding(.horizontal)
                             Ticker()
                                 .rotationEffect(.degrees(self.angle), anchor: UnitPoint.init(x: 0, y: 1))
                                 .animation(.easeInOut)
-                                .frame(height: (geometry.size.width / 1.5)/2)
+                                .frame(height: (geometry.size.width / DeviceConstraints().innerCircle())/2)
                         }
-                        
-                        
                     }
                     Text("\(secondsToMinutesSeconds(seconds: self.secondsRemaining))")
                         .font(Font.system(size: 47, weight: .bold, design: .rounded))
@@ -121,11 +119,11 @@ struct ClockView: View {
                                 UserDefaults.standard.synchronize()
                                 self.countdownTimer?.invalidate()
                                 self.showView = false
-                            }), secondaryButton: .cancel())
+                            }), secondaryButton: .cancel(Text("Cancel")))
                         }
                         
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, geometry.size.width / 10)
                     Spacer()
                 }
                 

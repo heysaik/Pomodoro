@@ -11,12 +11,26 @@ import SwiftUI
 struct StatsView: View {
     @State var workScale: CGFloat = 1
     @State var breakScale: CGFloat = 0.9
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         GeometryReader() { geometry in
             HStack {
                 Spacer()
                 VStack {
+                    HStack {
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(Color("blue"))
+                                .font(Font.system(.title, design: .rounded))
+                        }
+                        .padding([.top, .leading])
+                        Spacer()
+                    }
+                    .padding(.top)
+
                     Image(systemName: "chart.bar.fill")
                         .font(Font.system(.largeTitle, design: .rounded))
                         .padding(.top)

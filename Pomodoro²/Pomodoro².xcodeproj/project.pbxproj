@@ -22,6 +22,7 @@
 		8B9F38F423B1F38500E066E6 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F38F323B1F38500E066E6 /* StatsView.swift */; };
 		8B9F38F623B1FF2600E066E6 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F38F523B1FF2600E066E6 /* HelpView.swift */; };
 		8BB33CC523B0A82F009C272F /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB33CC423B0A82F009C272F /* Ticker.swift */; };
+		8BBF785023BAFFA40098DC23 /* DeviceConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF784F23BAFFA40098DC23 /* DeviceConstraints.swift */; };
 		8BFE0E3D23B74E3E00A535ED /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8BFE0E3C23B74E3E00A535ED /* SF-Pro-Rounded-Heavy.otf */; };
 		8BFE0E4023B74FBF00A535ED /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFE0E3F23B74FBF00A535ED /* AudioToolbox.framework */; };
 		8BFEBC4423B8996A0081C323 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBC4623B8996A0081C323 /* Localizable.strings */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		8B0680D023B1ACD40080876E /* Pomodoro².entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pomodoro².entitlements"; sourceTree = "<group>"; };
 		8B0680D123B1AE330080876E /* Ticks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticks.swift; sourceTree = "<group>"; };
+		8B1E847123BDAD01006DC431 /* AppKitGlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKitGlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B242EDD23B0AFD2004E0A90 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8B6F568723AE0D6300E7C8C9 /* Pomodoro².app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro².app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6F568A23AE0D6300E7C8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		8B9F38F323B1F38500E066E6 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		8B9F38F523B1FF2600E066E6 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		8BB33CC423B0A82F009C272F /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		8BBF784F23BAFFA40098DC23 /* DeviceConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConstraints.swift; sourceTree = "<group>"; };
 		8BFE0E3C23B74E3E00A535ED /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
 		8BFE0E3F23B74FBF00A535ED /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8BFEBC4523B8996A0081C323 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -62,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B1E846E23BDAD01006DC431 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B6F568423AE0D6300E7C8C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +92,7 @@
 				8B76E39323B5F81500F4BA16 /* LightIcon@3x.png */,
 				8B0680D123B1AE330080876E /* Ticks.swift */,
 				8BB33CC423B0A82F009C272F /* Ticker.swift */,
+				8BBF784F23BAFFA40098DC23 /* DeviceConstraints.swift */,
 			);
 			path = "UI's";
 			sourceTree = "<group>";
@@ -99,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8B6F568723AE0D6300E7C8C9 /* Pomodoro².app */,
+				8B1E847123BDAD01006DC431 /* AppKitGlue.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +163,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8B1E847023BDAD01006DC431 /* AppKitGlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1E847623BDAD01006DC431 /* Build configuration list for PBXNativeTarget "AppKitGlue" */;
+			buildPhases = (
+				8B1E846D23BDAD01006DC431 /* Sources */,
+				8B1E846E23BDAD01006DC431 /* Frameworks */,
+				8B1E846F23BDAD01006DC431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppKitGlue;
+			productName = AppKitGlue;
+			productReference = 8B1E847123BDAD01006DC431 /* AppKitGlue.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8B6F568623AE0D6300E7C8C9 /* Pomodoro² */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B6F569B23AE0D6400E7C8C9 /* Build configuration list for PBXNativeTarget "Pomodoro²" */;
@@ -178,6 +207,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = SK2020;
 				TargetAttributes = {
+					8B1E847023BDAD01006DC431 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					8B6F568623AE0D6300E7C8C9 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -207,11 +239,19 @@
 			projectRoot = "";
 			targets = (
 				8B6F568623AE0D6300E7C8C9 /* Pomodoro² */,
+				8B1E847023BDAD01006DC431 /* AppKitGlue */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8B1E846F23BDAD01006DC431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B6F568523AE0D6300E7C8C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,11 +271,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8B1E846D23BDAD01006DC431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B6F568323AE0D6300E7C8C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8B9F38F623B1FF2600E066E6 /* HelpView.swift in Sources */,
+				8BBF785023BAFFA40098DC23 /* DeviceConstraints.swift in Sources */,
 				8B6F568B23AE0D6300E7C8C9 /* AppDelegate.swift in Sources */,
 				8BB33CC523B0A82F009C272F /* Ticker.swift in Sources */,
 				8B0680D223B1AE330080876E /* Ticks.swift in Sources */,
@@ -278,6 +326,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8B1E847423BDAD01006DC431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = XJYMG76226;
+				INFOPLIST_FILE = AppKitGlue/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SApps.Mac.AppKitGlue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8B1E847523BDAD01006DC431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = XJYMG76226;
+				INFOPLIST_FILE = AppKitGlue/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SApps.Mac.AppKitGlue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		8B6F569923AE0D6400E7C8C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -400,6 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Pomodoro²/Pomodoro².entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Pomodoro²/Preview Content\"";
 				DEVELOPMENT_TEAM = XJYMG76226;
 				ENABLE_PREVIEWS = YES;
@@ -412,9 +499,9 @@
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SApps.Pomodoro-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -424,6 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Pomodoro²/Pomodoro².entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Pomodoro²/Preview Content\"";
 				DEVELOPMENT_TEAM = XJYMG76226;
 				ENABLE_PREVIEWS = YES;
@@ -436,15 +524,24 @@
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SApps.Pomodoro-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8B1E847623BDAD01006DC431 /* Build configuration list for PBXNativeTarget "AppKitGlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B1E847423BDAD01006DC431 /* Debug */,
+				8B1E847523BDAD01006DC431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8B6F568223AE0D6300E7C8C9 /* Build configuration list for PBXProject "Pomodoro²" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
