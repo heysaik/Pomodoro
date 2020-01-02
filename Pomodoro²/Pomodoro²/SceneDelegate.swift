@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             #if targetEnvironment(macCatalyst)
-            window.windowScene?.sizeRestrictions?.maximumSize = CGSize(width: 1400, height: .max)
+            window.windowScene?.sizeRestrictions?.maximumSize = CGSize(width: .max, height: .max)
             windowScene.titlebar?.titleVisibility = .hidden
             #endif
             window.makeKeyAndVisible()
@@ -61,7 +61,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-    
-    
 }
 
