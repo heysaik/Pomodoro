@@ -23,7 +23,7 @@ struct StatsView: View {
                             self.presentationMode.wrappedValue.dismiss()
                         }) {
                             Image(systemName: "xmark.circle.fill")
-                                .foregroundColor(Color("blue"))
+                                .foregroundColor(Color("close"))
                                 .font(Font.system(.title, design: .rounded))
                         }
                         .padding([.top, .leading])

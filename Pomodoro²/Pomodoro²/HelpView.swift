@@ -15,9 +15,9 @@ struct HelpView: View {
     @State var showPomodoro = false
     @State var pomoURL = "https://en.wikipedia.org/wiki/Pomodoro_Technique"
     @State var showDev = false
-    @State var devURL = "https://saikambampati.com"
+    @State var devURL = "https://skyhighlabs.app"
     @State var result: Result<MFMailComposeResult, Error>? = nil
-    @State var isShowingMailView = false
+    @State var isShowingShareView = false
     @State var resetStats = false
     @Environment(\.presentationMode) var presentationMode
     let selection = UISelectionFeedbackGenerator()
@@ -31,7 +31,7 @@ struct HelpView: View {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Image(systemName: "xmark.circle.fill")
-                            .foregroundColor(Color("blue"))
+                            .foregroundColor(Color("close"))
                             .font(Font.system(.title, design: .rounded))
                     }
                     .padding([.top, .leading])
@@ -107,7 +107,15 @@ struct HelpView: View {
                     HStack(alignment: .bottom, spacing: 20) {
                         Button(action: {
                             self.selection.selectionChanged()
-                            self.isShowingMailView.toggle()
+                            if MFMailComposeViewController.canSendMail() {
+                                UIApplication.shared.open(URL(string: "mailto:sai@skyhighlabs.app")!)
+                            } else if UIApplication.shared.canOpenURL(URL(string: "readdle-spark://compose?recipient=sai@skyhighlabs.app")!) {
+                                UIApplication.shared.open(URL(string: "readdle-spark://compose?recipient=sai@skyhighlabs.app")!)
+                            } else if UIApplication.shared.canOpenURL(URL(string: "airmail://compose?to=sai@skyhighlabs.app")!) {
+                                UIApplication.shared.open(URL(string: "airmail://compose?to=sai@skyhighlabs.app")!)
+                            } else {
+                                self.isShowingShareView.toggle()
+                            }
                         }) {
                             ZStack {
                             RoundedRectangle(cornerRadius: 10, style: .circular)
@@ -124,9 +132,8 @@ struct HelpView: View {
                                 }
                             }
                         }
-                        .disabled(!MFMailComposeViewController.canSendMail())
-                        .sheet(isPresented: $isShowingMailView) {
-                            MailView(result: self.$result)
+                        .sheet(isPresented: $isShowingShareView) {
+                            ShareSheet()
                         }
                         
                         Button(action: {
@@ -190,49 +197,14 @@ struct SafariView: UIViewControllerRepresentable {
 
 }
 
-struct MailView: UIViewControllerRepresentable {
-
-    @Environment(\.presentationMode) var presentation
-    @Binding var result: Result<MFMailComposeResult, Error>?
-
-    class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
-
-        @Binding var presentation: PresentationMode
-        @Binding var result: Result<MFMailComposeResult, Error>?
-
-        init(presentation: Binding<PresentationMode>,
-             result: Binding<Result<MFMailComposeResult, Error>?>) {
-            _presentation = presentation
-            _result = result
-        }
-
-        func mailComposeController(_ controller: MFMailComposeViewController,
-                                   didFinishWith result: MFMailComposeResult,
-                                   error: Error?) {
-            defer {
-                $presentation.wrappedValue.dismiss()
-            }
-            guard error == nil else {
-                self.result = .failure(error!)
-                return
-            }
-            self.result = .success(result)
-        }
+struct ShareSheet: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(
+            activityItems: ["sai@skyhighlabs.app"], applicationActivities: nil)
+        return controller
     }
-
-    func makeCoordinator() -> Coordinator {
-        return Coordinator(presentation: presentation,
-                           result: $result)
-    }
-
-    func makeUIViewController(context: UIViewControllerRepresentableContext<MailView>) -> MFMailComposeViewController {
-        let vc = MFMailComposeViewController()
-        vc.mailComposeDelegate = context.coordinator
-        return vc
-    }
-
-    func updateUIViewController(_ uiViewController: MFMailComposeViewController,
-                                context: UIViewControllerRepresentableContext<MailView>) {
-
+      
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
+        // nothing to do here
     }
 }

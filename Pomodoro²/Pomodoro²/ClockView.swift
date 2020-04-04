@@ -12,7 +12,7 @@ import AVFoundation
 struct ClockView: View {
     @State var secondsRemaining = 1500
     @State private var angle: Double = 0
-    @State private var countdownTimer: Timer?
+    @State private var countdownTimer = RepeatingTimer(timeInterval: 1.0)
     @State var isWorking = false
     @State var wantsToLeave = false
     @State var buttonStart = true
@@ -69,7 +69,7 @@ struct ClockView: View {
                             self.impact.impactOccurred(intensity: 1.0)
                             if self.buttonStart {
                                 self.buttonStart.toggle()
-                                self.countdownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (_) in
+                                self.countdownTimer.eventHandler = {
                                     self.angle += (360 / (self.isWorking ? (self.breakTime().seconds) : 1500))
                                     self.secondsRemaining -= 1
                                     
@@ -86,12 +86,24 @@ struct ClockView: View {
                                             self.secondsRemaining = Int(self.breakTime().seconds)
                                         }
                                     }
-                                })
+                                }
+                                self.countdownTimer.resume()
                             } else {
                                 if self.buttonText() == NSLocalizedString("End Break", comment: "End Break") {
                                     self.secondsRemaining = 1
                                 } else {
-                                    self.wantsToLeave.toggle()
+//                                    self.wantsToLeave.toggle()
+                                    UserDefaults.standard.synchronize()
+                                    var breakStats = UserDefaults.standard.integer(forKey: "com.p2.breaks")
+                                    breakStats += self.breakSessions
+                                    UserDefaults.standard.set(breakStats, forKey: "com.p2.breaks")
+                                    
+                                    var workStats = UserDefaults.standard.integer(forKey: "com.p2.works")
+                                    workStats += self.workSessions
+                                    UserDefaults.standard.set(workStats, forKey: "com.p2.works")
+                                    UserDefaults.standard.synchronize()
+                                    self.countdownTimer.suspend()
+                                    self.showView = false
                                 }
                             }
                         }) {
@@ -106,22 +118,6 @@ struct ClockView: View {
                         }
                         .frame(height: 50)
                         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 10)
-                        .alert(isPresented: self.$wantsToLeave) { () -> Alert in
-                            Alert(title: Text("Are you sure?"), message: Text("This action will end all progress you have made"), primaryButton: .destructive(Text("End Session"), action: {
-                                UserDefaults.standard.synchronize()
-                                var breakStats = UserDefaults.standard.integer(forKey: "com.p2.breaks")
-                                breakStats += self.breakSessions
-                                UserDefaults.standard.set(breakStats, forKey: "com.p2.breaks")
-                                
-                                var workStats = UserDefaults.standard.integer(forKey: "com.p2.works")
-                                workStats += self.workSessions
-                                UserDefaults.standard.set(workStats, forKey: "com.p2.works")
-                                UserDefaults.standard.synchronize()
-                                self.countdownTimer?.invalidate()
-                                self.showView = false
-                            }), secondaryButton: .cancel(Text("Cancel")))
-                        }
-                        
                     }
                     .padding(.horizontal, geometry.size.width / 10)
                     Spacer()
@@ -134,6 +130,21 @@ struct ClockView: View {
         .onAppear {
             UIApplication.shared.isIdleTimerDisabled = true
         }
+//        .alert(isPresented: self.$wantsToLeave) {
+//            Alert(title: Text("Are you sure?"), message: Text("This action will end all progress you have made"), primaryButton: .destructive(Text("End Session"), action: {
+//                UserDefaults.standard.synchronize()
+//                var breakStats = UserDefaults.standard.integer(forKey: "com.p2.breaks")
+//                breakStats += self.breakSessions
+//                UserDefaults.standard.set(breakStats, forKey: "com.p2.breaks")
+//
+//                var workStats = UserDefaults.standard.integer(forKey: "com.p2.works")
+//                workStats += self.workSessions
+//                UserDefaults.standard.set(workStats, forKey: "com.p2.works")
+//                UserDefaults.standard.synchronize()
+//                self.countdownTimer.suspend()
+//                self.showView = false
+//            }), secondaryButton: .cancel(Text("Cancel")))
+//        }
         
     }
     
@@ -171,4 +182,58 @@ struct ContentView_Previews: PreviewProvider {
 // Seconds Formatting Function
 func secondsToMinutesSeconds(seconds : Int) -> String {
     return "\(String(format: "%02d", ((seconds % 3600) / 60))):\(String(format: "%02d", ((seconds % 3600) % 60)))"
+}
+
+class RepeatingTimer {
+
+    let timeInterval: TimeInterval
+    
+    init(timeInterval: TimeInterval) {
+        self.timeInterval = timeInterval
+    }
+    
+    private lazy var timer: DispatchSourceTimer = {
+        let t = DispatchSource.makeTimerSource()
+        t.schedule(deadline: .now() + self.timeInterval, repeating: self.timeInterval)
+        t.setEventHandler(handler: { [weak self] in
+            self?.eventHandler?()
+        })
+        return t
+    }()
+
+    var eventHandler: (() -> Void)?
+
+    private enum State {
+        case suspended
+        case resumed
+    }
+
+    private var state: State = .suspended
+
+    deinit {
+        timer.setEventHandler {}
+        timer.cancel()
+        /*
+         If the timer is suspended, calling cancel without resuming
+         triggers a crash. This is documented here https://forums.developer.apple.com/thread/15902
+         */
+        resume()
+        eventHandler = nil
+    }
+
+    func resume() {
+        if state == .resumed {
+            return
+        }
+        state = .resumed
+        timer.resume()
+    }
+
+    func suspend() {
+        if state == .suspended {
+            return
+        }
+        state = .suspended
+        timer.suspend()
+    }
 }

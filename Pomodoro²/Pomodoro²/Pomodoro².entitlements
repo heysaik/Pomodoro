@@ -6,7 +6,5 @@
 	<true/>
 	<key>com.apple.security.network.client</key>
 	<true/>
-	<key>inter-app-audio</key>
-	<true/>
 </dict>
 </plist>
